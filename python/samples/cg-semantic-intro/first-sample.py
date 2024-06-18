@@ -24,7 +24,7 @@ if selectedService == Service.OpenAI:
     from semantic_kernel.connectors.ai.open_ai import OpenAIChatCompletion
 
     service_id = "default"
-    ai_model_id = "text-davinci-003"  # Example model ID; replace with the actual model ID you intend to use
+    ai_model_id = "gpt-3.5-turbo"  # Example model ID; replace with the actual model ID you intend to use
     kernel.add_service(
         OpenAIChatCompletion(
             service_id=service_id,
@@ -43,7 +43,7 @@ joke_function = plugin["Joke"]
 async def get_joke():
     joke = await kernel.invoke(
         joke_function,
-        KernelArguments(input="time travel to dinosaur age", style="super silly"),
+        KernelArguments(input="ice creame during summer", style="super silly"),
     )
     print(joke)
 

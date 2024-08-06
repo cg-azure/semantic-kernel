@@ -26,7 +26,8 @@ These are available intents that one might query:
     DisableAlerting,
     OnDemandSummary,
     OnDemandNotes,
-    TellMeMore
+    TellMeMore,
+    WeatherUpdate
 
 Which intent is this query asking for? If none match, respond with Unknown.
 
